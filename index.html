@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>My Page</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<h1>Mi Curriculum</h1>
-		<p>This is my page.</p>
-		<footer>
-			<p>Copyright &copy; 2023</p>
-		</footer>
-	</body>
+<head>
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+  <main itemscope itemtype="http://schema.org/Person">
+    <header>
+      <h1 itemprop="name">Bard</h1>
+      <img src="photo.jpg" alt="Bard">
+      <ul>
+        <li><a href="https://github.com/bard">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/bard/">LinkedIn</a></li>
+      </ul>
+    </header>
+    <section itemprop="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <a href="https://www.stanford.edu/">Stanford University</a>
+          <time itemprop="startDate" datetime="2018-09-01">2018-2022</time>
+          <h3>Master of Science in Computer Science</h3>
+        </li>
+        <li>
+          <a href="https://www.berkeley.edu/">University of California, Berkeley</a>
+          <time itemprop="startDate" datetime="2014-09-01">2014-2018</time>
+          <h3>Bachelor of Science in Computer Science</h3>
+        </li>
+      </ul>
+    </section>
+    <section itemprop="workExperience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <a href="https://www.google.com/">Google</a>
+          <h3>Software Engineer</h3>
+          <time itemprop="startDate" datetime="2022-09-01">2022-Present</h3>
+        </li>
+        <li>
+          <a href="https://www.microsoft.com/">Microsoft</a>
+          <h3>Software Engineer Intern</h3>
+          <time itemprop="startDate" datetime="2021-06-01">2021-08-01</h3>
+        </li>
+      </ul>
+    </section>
+    <section itemprop="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Python, Java, C++</li>
+        <li>Machine Learning</li>
+        Natural Language Processing</li>
+        <li>Data Science</li>
+      </ul>
+    </section>
+    <section itemprop="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/bard/my-project">My Project</a>
+          <h3>A project that I worked on</h3>
+        </li>
+        <li>
+          <a href="https://github.com/bard/another-project">Another Project</a>
+          <h3>Another project that I worked on</h3>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
