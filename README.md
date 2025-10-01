@@ -1,1 +1,1 @@
-# curriculum
+# Proyecto 02: Curriculum Vitae
