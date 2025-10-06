@@ -12,6 +12,11 @@
     <header>
         <h1>Tu Nombre</h1>
         <p>Tu Cargo | Tu Email | Tu Teléfono</p>
+        <figure class="profile-photo">
+            <img src="https://placehold.co/150x150/007bff/ffffff?text=Tu+Foto+CV"
+                alt="Foto de perfil profesional de [Tu Nombre]" width="150" height="150">
+            <figcaption>Foto de perfil</figcaption>
+        </figure>
     </header>
     <nav>
         <ul>
@@ -32,13 +37,159 @@
         </section>
         <section id="educacion">
             <h2>Educación</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0" allowfullscreen></iframe>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+
+            <p>Resumen de mis contribuciones en proyectos recientes.</p>
+
+            <table align="center">
+                <caption>Detalles de los Proyectos Clave (Últimos 2 Años)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre del Proyecto</th>
+                        <th scope="col">Mi Rol</th>
+                        <th scope="col">Tecnologías Clave</th>
+                        <th scope="col">Impacto / Logro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Plataforma E-commerce V3</th>
+                        <td>Desarrollador Frontend Principal</td>
+                        <td>React, TypeScript, Redux, Sass</td>
+                        <td>Reducción del tiempo de carga en un 30%; aumento de la conversión en un 15%.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sistema de Gestión de Inventario</th>
+                        <td>Ingeniero Backend</td>
+                        <td>Node.js, PostgreSQL, Docker, AWS Lambda</td>
+                        <td>Automatización de reportes, ahorrando 10 horas semanales al equipo operativo.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Para más detalles y enlaces a repositorios, contacte directamente.</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <p>Lo que dicen las personas con las que he trabajado:</p>
+
+            <figure>
+                <blockquote>
+                    <p>“Su habilidad para resolver problemas complejos bajo presión es realmente impresionante. Un
+                        activo invaluable para cualquier equipo.”</p>
+                </blockquote>
+                <figcaption>
+                    <p><strong>Elena Rojas</strong>, Gerente de Proyectos Senior en TechInnovate S.A.</p>
+                    <p>Trabajé con [Tu Nombre] en el desarrollo y lanzamiento de nuestra plataforma principal durante
+                        dos años. Su dedicación y el código limpio que entregó fueron fundamentales para el éxito del
+                        proyecto.</p>
+                </figcaption>
+            </figure>
+
+            <hr>
+            <figure>
+                <blockquote>
+                    <p>“Siempre dispuesto a ir más allá para asegurar la calidad y el cumplimiento de los plazos.
+                        Demostró una proactividad excepcional.”</p>
+                </blockquote>
+                <figcaption>
+                    <p><strong>Carlos Gómez</strong>, Director de Marketing Digital en Agencia Creativa Alfa.</p>
+                    <p>Colaboramos en una campaña de marketing intensiva donde [Tu Nombre] fue responsable de la
+                        integración técnica del sitio web. Su eficiencia y atención al detalle nos permitieron optimizar
+                        el rendimiento y superar los objetivos iniciales.</p>
+                </figcaption>
+            </figure>
+
+            <hr>
+            <figure>
+                <blockquote>
+                    <p>“Un excelente comunicador técnico. Explicó soluciones complejas de manera sencilla, facilitando
+                        la toma de decisiones a nivel ejecutivo.”</p>
+                </blockquote>
+                <figcaption>
+                    <p><strong>Dra. Sofía Pérez</strong>, CTO en Fundación BioData.</p>
+                    <p>Fui su supervisora en un proyecto de migración de bases de datos críticas. Su enfoque metódico y
+                        su capacidad para documentar procesos fueron ejemplares, garantizando una transición sin
+                        problemas ni pérdidas de información.</p>
+                </figcaption>
+            </figure>
+
+        </section>
+        <section id="contacto">
+            <h2>¿Hablamos?</h2>
+            <p>Utiliza este formulario para enviar un mensaje directo y me pondré en contacto contigo lo antes posible.
+            </p>
+
+            <form action="/submit-contact-form" method="POST">
+
+                <div>
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="motivo">Motivo de Contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>-- Selecciona una opción --</option>
+                        <option value="empleo">Oferta de Empleo</option>
+                        <option value="colaboracion">Propuesta de Colaboración</option>
+                        <option value="consulta">Consulta General</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Tipo de Horario Preferido:</legend>
+                    <div>
+                        <input type="radio" id="jornada-completa" name="horario" value="completa" required>
+                        <label for="jornada-completa">Jornada Completa</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="jornada-parcial" name="horario" value="parcial">
+                        <label for="jornada-parcial">Jornada Parcial</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="freelance" name="horario" value="freelance">
+                        <label for="freelance">Freelance/Por Proyecto</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Áreas de Interés (Selecciona varias):</legend>
+                    <div>
+                        <input type="checkbox" id="frontend" name="intereses[]" value="frontend">
+                        <label for="frontend">Desarrollo Frontend</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="backend" name="intereses[]" value="backend">
+                        <label for="backend">Arquitectura Backend</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="devops" name="intereses[]" value="devops">
+                        <label for="devops">DevOps y Nube</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="mensaje">Tu Mensaje Detallado:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+
+            </form>
+        </section>
+
     </main>
     <footer>
         <p>© Tu Nombre - 2023</p>
