@@ -47,6 +47,21 @@ nav > ul {
 
     /* Eliminar los estilos de lista predeterminados */
     list-style: none;
+    
+    /* Activa el modelo de diseño Flexbox*/
+    display: flex;
+
+    /* Distribuye los elementos con espacio igual entre ellos */
+    justify-content: space-between;
+
+    /* Organiza los elementos en una fila horizontal de izquierda a derecha */
+    flex-direction: row;
+
+    /* Centra verticalmente los elementos dentro del contenedor */
+    align-items: center;
+
+    /* Establece un espacio uniforme de 1rem entre cada elemento */
+    gap: 1rem;
 
 }
 
@@ -66,5 +81,59 @@ section {
 
     /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
+
+}
+
+section > form {
+
+    /* Activa el modelo de diseño basado en cuadrícula */
+    display: grid;
+
+    /* Define una sola columna que ocupa todo el ancho disponible del contenedor */
+    grid-template-columns: 1fr 1fr;
+
+    /* Establece un espacio vertical uniforme de 1rem entre filas */
+    row-gap: 1rem;
+
+    /* Establece un espacio horizontal uniforme de 1rem entre columnas */
+    column-gap: 1rem;
+
+
+}
+
+/* section#testimonios {
+
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+}
+
+
+#testimonios > h2 {
+
+     flex: 0 0 100%;
+
+}
+
+#testimonios > article {
+
+     flex: 1 1 calc(33.333% - 1rem);
+
+} */
+
+#testimonios {
+    display: grid;
+
+    /* Define tres columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#testimonios > h2 {
+
+     /* El subtítulo ocupa las tres columnas */
+     grid-column: 1 / -1;
 
 }
