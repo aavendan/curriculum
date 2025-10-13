@@ -19,7 +19,7 @@
         <p>Tu Cargo | Tu Email | Tu Teléfono</p>
         <figure class="profile-photo">
             <img id="photo" src="https://placehold.co/150x150/007bff/ffffff?text=Tu+Foto+CV"
-                alt="Foto de perfil profesional de [Tu Nombre]" >
+                alt="Foto de perfil profesional de [Tu Nombre]">
             <figcaption>Foto de perfil</figcaption>
         </figure>
     </header>
@@ -85,9 +85,8 @@
         </section>
         <section id="testimonios">
             <h2>Testimonios</h2>
-            <p>Lo que dicen las personas con las que he trabajado:</p>
-
-            <figure>
+            
+            <article>
                 <blockquote>
                     <p>“Su habilidad para resolver problemas complejos bajo presión es realmente impresionante. Un
                         activo invaluable para cualquier equipo.”</p>
@@ -98,10 +97,9 @@
                         dos años. Su dedicación y el código limpio que entregó fueron fundamentales para el éxito del
                         proyecto.</p>
                 </figcaption>
-            </figure>
+            </article>
 
-            <hr>
-            <figure>
+            <article>
                 <blockquote>
                     <p>“Siempre dispuesto a ir más allá para asegurar la calidad y el cumplimiento de los plazos.
                         Demostró una proactividad excepcional.”</p>
@@ -112,10 +110,9 @@
                         integración técnica del sitio web. Su eficiencia y atención al detalle nos permitieron optimizar
                         el rendimiento y superar los objetivos iniciales.</p>
                 </figcaption>
-            </figure>
+            </article>
 
-            <hr>
-            <figure>
+            <article>
                 <blockquote>
                     <p>“Un excelente comunicador técnico. Explicó soluciones complejas de manera sencilla, facilitando
                         la toma de decisiones a nivel ejecutivo.”</p>
@@ -126,7 +123,7 @@
                         su capacidad para documentar procesos fueron ejemplares, garantizando una transición sin
                         problemas ni pérdidas de información.</p>
                 </figcaption>
-            </figure>
+            </article>
 
         </section>
         <section id="contacto">
@@ -136,61 +133,40 @@
 
             <form action="/submit-contact-form" method="POST">
 
-                <div>
-                    <label for="nombre">Tu Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-
-                <div>
-                    <label for="motivo">Motivo de Contacto:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="" disabled selected>-- Selecciona una opción --</option>
-                        <option value="empleo">Oferta de Empleo</option>
-                        <option value="colaboracion">Propuesta de Colaboración</option>
-                        <option value="consulta">Consulta General</option>
-                    </select>
-                </div>
+                <label for="nombre">Tu Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="motivo">Motivo de Contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>-- Selecciona una opción --</option>
+                    <option value="empleo">Oferta de Empleo</option>
+                    <option value="colaboracion">Propuesta de Colaboración</option>
+                    <option value="consulta">Consulta General</option>
+                </select>
 
                 <fieldset>
                     <legend>Tipo de Horario Preferido:</legend>
-                    <div>
-                        <input type="radio" id="jornada-completa" name="horario" value="completa" required>
-                        <label for="jornada-completa">Jornada Completa</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="jornada-parcial" name="horario" value="parcial">
-                        <label for="jornada-parcial">Jornada Parcial</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="freelance" name="horario" value="freelance">
-                        <label for="freelance">Freelance/Por Proyecto</label>
-                    </div>
+                    <input type="radio" id="jornada-completa" name="horario" value="completa" required>
+                    <label for="jornada-completa">Jornada Completa</label>
+                    <input type="radio" id="jornada-parcial" name="horario" value="parcial">
+                    <label for="jornada-parcial">Jornada Parcial</label>
+                    <input type="radio" id="freelance" name="horario" value="freelance">
+                    <label for="freelance">Freelance/Por Proyecto</label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Áreas de Interés (Selecciona varias):</legend>
-                    <div>
-                        <input type="checkbox" id="frontend" name="intereses[]" value="frontend">
-                        <label for="frontend">Desarrollo Frontend</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="backend" name="intereses[]" value="backend">
-                        <label for="backend">Arquitectura Backend</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="devops" name="intereses[]" value="devops">
-                        <label for="devops">DevOps y Nube</label>
-                    </div>
+                    <input type="checkbox" id="frontend" name="intereses[]" value="frontend">
+                    <label for="frontend">Desarrollo Frontend</label>
+                    <input type="checkbox" id="backend" name="intereses[]" value="backend">
+                    <label for="backend">Arquitectura Backend</label>
+                    <input type="checkbox" id="devops" name="intereses[]" value="devops">
+                    <label for="devops">DevOps y Nube</label>
                 </fieldset>
 
-                <div>
-                    <label for="mensaje">Tu Mensaje Detallado:</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-                </div>
+                <label for="mensaje">Tu Mensaje Detallado:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
 
-                <div>
-                    <button type="submit">Enviar Mensaje</button>
-                </div>
+                <button type="submit">Enviar Mensaje</button>
 
             </form>
         </section>
