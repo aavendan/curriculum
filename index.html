@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 
 <body>
@@ -13,8 +18,8 @@
         <h1>Tu Nombre</h1>
         <p>Tu Cargo | Tu Email | Tu Teléfono</p>
         <figure class="profile-photo">
-            <img src="https://placehold.co/150x150/007bff/ffffff?text=Tu+Foto+CV"
-                alt="Foto de perfil profesional de [Tu Nombre]" width="150" height="150">
+            <img id="photo" src="https://placehold.co/150x150/007bff/ffffff?text=Tu+Foto+CV"
+                alt="Foto de perfil profesional de [Tu Nombre]" >
             <figcaption>Foto de perfil</figcaption>
         </figure>
     </header>
@@ -29,14 +34,14 @@
     </nav>
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/85MppyLJHz0" allowfullscreen></iframe>
         </section>
         <section id="habilidades">
