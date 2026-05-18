@@ -17,6 +17,7 @@
         <ul>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -30,14 +31,191 @@
         <section id="experiencia">
             <h2>Experiencia</h2>
         </section>
+        <section id="testimonios" aria-labelledby="testimonios-titulo">
+            <h2 id="testimonios-titulo">Testimonios</h2>
+            <article>
+                <blockquote>
+                    <p>Su trabajo elevó la calidad del proyecto y mejoró de forma visible la coordinación del equipo.
+                    </p>
+                </blockquote>
+                <p><strong>Ana López</strong>, Directora de Operaciones. Lideró un proyecto en el que aportó
+                    organización, comunicación clara y una ejecución muy confiable.</p>
+            </article>
+            <article>
+                <blockquote>
+                    <p>Fue una colaboración ágil, profesional y siempre orientada a resolver problemas con criterio.</p>
+                </blockquote>
+                <p><strong>Carlos Méndez</strong>, Jefe de Producto. Su experiencia fue positiva por su capacidad para
+                    proponer soluciones, adaptarse rápido y cumplir objetivos.</p>
+            </article>
+            <article>
+                <blockquote>
+                    <p>Dejó una impresión excelente por su responsabilidad, atención al detalle y actitud colaborativa.
+                    </p>
+                </blockquote>
+                <p><strong>María Fernández</strong>, Coordinadora de Proyectos. Trabajó con nosotros aportando
+                    consistencia, compromiso y resultados de alta calidad.</p>
+            </article>
+        </section>
         <section id="educacion">
             <h2>Educación</h2>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Video de presentación" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen loading="lazy">
+                </iframe>
+                <figcaption>Video de presentación profesional.</figcaption>
+            </figure>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
+        </section>
+        <section aria-labelledby="ejemplos-texto">
+            <h2 id="ejemplos-texto">Ejemplos de contenido semántico</h2>
+
+            <!-- 1) Párrafo con enlace -->
+            <p>
+                Puedes visitar mi portafolio en
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                    este sitio web
+                </a>.
+            <figure>
+                <img src="https://picsum.photos/800/400" alt="Imagen de ejemplo del portafolio" width="800" height="400"
+                    loading="lazy">
+                <figcaption>Imagen de muestra del proyecto.</figcaption>
+            </figure>
+            </p>
+
+            <!-- 2) Lista ordenada -->
+            <h3>Pasos del proceso</h3>
+            <ol>
+                <li>Analizar requerimientos
+                <li>Diseñar la solución
+                <li>Implementar y validar
+            </ol>
+
+            <!-- 3) Lista no ordenada -->
+            <h3>Habilidades principales</h3>
+            <ul>
+                <li>Comunicación efectiva</li>
+                <li>Trabajo en equipo</li>
+                <li>Resolución de problemas</li>
+            </ul>
+
+            <!-- 4) Tabla sin bordes -->
+            <h3>Tabla de referencia</h3>
+            <table>
+                <caption>Disponibilidad por proyecto</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Proyecto</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Horas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Proyecto A</th>
+                        <td>Activo</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Proyecto B</th>
+                        <td>En pausa</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Proyecto C</th>
+                        <td>Finalizado</td>
+                        <td>35</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Formulario de contacto</h2>
+
+            <form action="/enviar" method="post">
+                <fieldset>
+                    <legend>Datos básicos</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="perfil">Perfil profesional</label>
+                        <select id="perfil" name="perfil" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="fullstack">Fullstack</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Modalidad preferida (selección única)</legend>
+
+                    <p>
+                        <input type="radio" id="remoto" name="modalidad" value="remoto" required>
+                        <label for="remoto">Remoto</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="hibrido" name="modalidad" value="hibrido">
+                        <label for="hibrido">Híbrido</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="presencial" name="modalidad" value="presencial">
+                        <label for="presencial">Presencial</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tecnologías dominadas (selección múltiple)</legend>
+
+                    <p>
+                        <input type="checkbox" id="html" name="tecnologias[]" value="html">
+                        <label for="html">HTML</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="css" name="tecnologias[]" value="css">
+                        <label for="css">CSS</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="js" name="tecnologias[]" value="javascript">
+                        <label for="js">JavaScript</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar formulario</button>
+                </p>
+            </form>
+        </section>
+        <section>
+            <h2>Ubicación</h2>
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación en Google Maps">
+                </iframe>
+                <figcaption>Ubicación de la oficina principal.</figcaption>
+            </figure>
         </section>
     </main>
     <footer>
