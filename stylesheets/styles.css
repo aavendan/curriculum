@@ -6,18 +6,19 @@
 }
 
 h1 {
+
+    /* Alineación del texto */
     text-align: center;
+
+    /* Grosor de la fuente negrita */
     font-weight: bold;
 
-    font-family: "BBH Sans Hegarty", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #photo {
 
     /* Ancho del elemento */
-    width: 8vw;
+    width: 16vw;
 
     /* Alto del elemento */
     height: auto;
@@ -31,7 +32,6 @@ h1 {
     /* Transformación del texto a mayúsculas */
     text-transform: uppercase;
 }
-
 
 footer p {
 
@@ -47,21 +47,6 @@ nav > ul {
 
     /* Eliminar los estilos de lista predeterminados */
     list-style: none;
-    
-    /* Activa el modelo de diseño Flexbox*/
-    display: flex;
-
-    /* Distribuye los elementos con espacio igual entre ellos */
-    justify-content: space-between;
-
-    /* Organiza los elementos en una fila horizontal de izquierda a derecha */
-    flex-direction: row;
-
-    /* Centra verticalmente los elementos dentro del contenedor */
-    align-items: center;
-
-    /* Establece un espacio uniforme de 1rem entre cada elemento */
-    gap: 1rem;
 
 }
 
@@ -82,58 +67,14 @@ section {
     /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
 
-}
+    /* borde redondeado con un radio de 5 píxeles */
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
 
-section > form {
-
-    /* Activa el modelo de diseño basado en cuadrícula */
-    display: grid;
-
-    /* Define una sola columna que ocupa todo el ancho disponible del contenedor */
-    grid-template-columns: 1fr 1fr;
-
-    /* Establece un espacio vertical uniforme de 1rem entre filas */
-    row-gap: 1rem;
-
-    /* Establece un espacio horizontal uniforme de 1rem entre columnas */
-    column-gap: 1rem;
-
-
-}
-
-/* section#testimonios {
-
-    display: flex;
-    
-    flex-wrap: wrap;
-
-    gap: 1rem;
-
-}
-
-
-#testimonios > h2 {
-
-     flex: 0 0 100%;
-
-}
-
-#testimonios > article {
-
-     flex: 1 1 calc(33.333% - 1rem);
-
-} */
-
-#testimonios {
-    display: grid;
-
-    /* Define tres columnas iguales */
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#testimonios > h2 {
-
-     /* El subtítulo ocupa las tres columnas */
-     grid-column: 1 / -1;
+   /* sombra a un elemento */
+   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 
 }
